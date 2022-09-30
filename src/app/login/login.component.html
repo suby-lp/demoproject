@@ -1,0 +1,50 @@
+<div class="col-img">
+<mat-card>
+    <mat-card-content>
+      <div class="header">
+        <P class="login">LOGIN </P>
+      </div>
+      <!-- Login Form -->
+      <form  (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+        <!-- Input Email -->
+        <div class="emailInput">
+          <mat-form-field class="full-width" >
+            <mat-label [ngStyle]="{'color' : 'white' }">Email</mat-label>
+            <input
+              formControlName="email"
+              matInput
+              placeholder="Enter email address" required [(ngModel)]="data.username"
+            />
+            <mat-error *ngIf="!loginForm.controls['email'].valid">
+                Email is required
+              </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <span>
+            <a class="text-link" class="aLink">Forgot Password?</a>
+          </span>
+          <!-- Input Password -->
+          <mat-form-field class="full-width" >
+            <mat-label [ngStyle]="{'color' : 'white' }">Password</mat-label>
+            <input formControlName="password"  placeholder="Enter your password"  matInput [type]=" !hide ? 'password' : 'text'" required [(ngModel)]="data.password" />
+            <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+            [attr.aria-pressed]="!hide">
+            <mat-icon>
+                {{hide ? 'visibility' : 'visibility_off'}}
+            </mat-icon>
+        </button>
+        <mat-error *ngIf="!loginForm.controls['password'].valid">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+        </div>
+        <br>
+        <br>
+        <button [disabled]="!loginForm.controls['email'].valid || !loginForm.controls['password'].valid" class="login-button">Login</button>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+  </div>

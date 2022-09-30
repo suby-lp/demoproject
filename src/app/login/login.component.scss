@@ -1,0 +1,116 @@
+.col-img {
+  width: 800px;
+  height:760px;
+  background-image: url("../../assets/login.png");
+  border-radius: 0px 40px 40px 0px;
+  background-position-x: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+mat-card {
+    max-width: 600px;
+    text-align: center;
+    max-height: 600px;
+    width: 545px;
+    height: 446px;
+    left: 849px ;
+    top: 194px;
+    
+    background: #1A2630;
+    box-shadow: 0px 0px 50px 10px rgba(26, 26, 26, 0.5);
+    border-radius: 5px;
+  }
+  .login-image
+  {
+    width: 100%;
+    max-width: 750px; 
+min-height: 70%;
+
+background: rgba(2, 9, 20, 0.54);
+border-radius: 0px 40px 40px 0px;
+  }
+  .login
+  {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #FFFFFF;
+  }
+  
+  .header{
+    text-align: center;
+  
+  }
+  .full-width {
+    width: 80%;
+  }
+  
+  .button-row {
+    padding-top: 5px;
+  }
+  
+  .button-row a {
+    margin-right: 8px;
+    text-align: center;
+  }
+  
+  .forget-password{
+    padding-left: 0px;
+  }
+  
+  .emailInput{
+    padding-top: 10px;
+  }
+  
+  .contentBody {
+    padding: 60px 1rem;
+    background :#6c2be4;
+    display: block;
+  }
+  
+  .aLink{
+    float: right;
+    padding-right: 60px;
+    text-decoration: none;
+  }
+  .login-button
+  {
+    width: 429px;
+height: 53px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+background: linear-gradient(136.67deg, #FF000A 8.34%, #E3507A 95.26%);
+box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+border-radius: 32px;
+  }
+  input
+  {
+    color:#FFFFFF;
+
+  }
+  form{
+    color:white;
+  }
+ .mat-input
+  {
+    color: white;
+  }
+  .mat-label
+  {
+    color:white;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+  }
+  
