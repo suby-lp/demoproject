@@ -1,3 +1,8 @@
+.row-img
+{
+  display: flex;
+  flex-direction: row;
+}
 .col-img {
   width: 800px;
   height:760px;
@@ -14,8 +19,10 @@ mat-card {
     max-height: 600px;
     width: 545px;
     height: 446px;
-    left: 849px ;
-    top: 194px;
+    display: flex;
+    flex-direction: column;
+    left: 69px ;
+    top: 124px;
     
     background: #1A2630;
     box-shadow: 0px 0px 50px 10px rgba(26, 26, 26, 0.5);

@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
      this.empService.getLogin(this.data).subscribe(res=>{
       console.log(res)
       this.route.navigateByUrl('profile')
-
+localStorage.setItem('accessToken',res.access)
      },
      //Error
      err=>{

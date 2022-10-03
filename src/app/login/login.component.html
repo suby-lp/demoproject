@@ -1,4 +1,5 @@
-<div class="col-img">
+<div class="row-img">
+<div class="col-img"></div>
 <mat-card>
     <mat-card-content>
       <div class="header">
@@ -42,7 +43,7 @@
         </div>
         <br>
         <br>
-        <button [disabled]="!loginForm.controls['email'].valid || !loginForm.controls['password'].valid" class="login-button">Login</button>
+        <button [disabled]="!loginForm.controls['email'].valid   || !loginForm.controls['password'].valid" class="login-button">Login</button>
       </form>
 
     </mat-card-content>
